@@ -10,3 +10,52 @@ hr{
 .rodape__titulo{
     color: black;
 }
+
+.lista__rodape{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .rodape{
+        display: flex;
+        justify-content: space-around;      
+    }
+    
+    .lista__rodape{
+        display: block;
+    }
+
+    .lista__rodape__item{
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+
+    .lista__rodape__link{
+        color: #474646;
+        text-decoration: none;
+        margin-left: 0.6em;
+    }
+
+    .lista__rodape__titulo{
+        color: #858585;
+        font-size: 14px;
+    }
+
+    .rodape__titulo{
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (min-width: 1728px){
+    .rodape{
+        padding: 3em 0;
+    }
+    
+    .lista__rodape{
+        border-left: 1px solid #858585;
+        padding-left: 1em;
+    }
+}
